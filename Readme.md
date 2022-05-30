@@ -1,0 +1,1 @@
+The link to the deployed api: https://nerdle-clone-api.herokuapp.com/
