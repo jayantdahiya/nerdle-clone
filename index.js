@@ -3,8 +3,14 @@ const dotenv = require('dotenv');
 const nerdleRoutes = require('./routes/nerdle');
 const { default: mongoose } = require('mongoose');
 // const mongoose = require(mongoose);
+const cors = require('cors');
 
 const app = express();
+
+app.use(cors({
+  origin: '*'
+}));
+
 dotenv.config();
 const PORT = process.env.PORT;
 const DatabaseUrl = process.env.DatabaseUrl;
